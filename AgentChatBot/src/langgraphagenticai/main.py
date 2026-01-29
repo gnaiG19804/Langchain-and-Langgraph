@@ -13,7 +13,11 @@ def load_langgraph_agentai_app():
         st.error("Error loading UI components.")
         return 
     
-    user_messages = st.chat_input("Enter your message here...")
+    if st.session_state.IsFetchNewsClicked:
+        user_messages= st.session_state.TimeFrame
+    else:
+        user_messages = st.chat_input("Enter your message here...")
+    
 
     if user_messages:
         try:
