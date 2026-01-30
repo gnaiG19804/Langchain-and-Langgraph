@@ -1,0 +1,8 @@
+mcp
+langchain
+langgraph
+langchain-groq
+python-dotenv
+httpx
+uvicorn
+beautifulsoup4
